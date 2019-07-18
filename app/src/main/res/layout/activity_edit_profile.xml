@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profile_Edit_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#fafafa"
+        android:elevation="3dp"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/edit_profile_save"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_action_check"
+            tools:ignore="RtlHardcoded" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/userlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/profile_user_liner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical|center_horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_user_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="9dp"
+                android:padding="3dp"
+                android:scaleType="centerCrop"
+                android:src="#e6f6fc"
+                app:civ_border_color="#cccccc"
+                app:civ_border_width="1dp" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_user_image"
+                android:text="Profil Resmi Değiştir"
+                android:textColor="#2b7ed6"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile_user_liner"
+            tools:ignore="NotSibling">
+
+            <EditText
+                android:id="@+id/edit_profile_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/edit_profile_edittext_bg"
+                android:ems="10"
+                android:hint="İsim Soyisim"
+                android:inputType="textPersonName"
+                android:paddingStart="25dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,UnknownIdInLayout" />
+
+            <EditText
+                android:id="@+id/edit_profile_username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/edit_profile_fullname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_profile_edittext_bg"
+                android:ems="10"
+                android:hint="Kullanıcı Adı"
+                android:inputType="textPersonName"
+                android:paddingStart="25dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="14sp"
+                tools:ignore="UnknownIdInLayout" />
+
+            <EditText
+                android:id="@+id/edit_profile_status"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/edit_profile_username"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_profile_edittext_bg"
+                android:ems="10"
+                android:hint="Durum"
+                android:inputType="textPersonName"
+                android:paddingStart="25dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,UnknownIdInLayout" />
+
+            <EditText
+                android:id="@+id/edit_profile_Phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/edit_profile_status"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_profile_edittext_bg"
+                android:ems="10"
+                android:hint="Telefon Numarası"
+                android:inputType="phone"
+                android:paddingStart="25dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,TextFields,UnknownIdInLayout" />
+
+            <ProgressBar
+                android:id="@+id/edit_profile_progressbar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="38dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

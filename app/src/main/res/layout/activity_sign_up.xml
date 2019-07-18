@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".SignInActivity"
+    tools:layout_editor_absoluteY="25dp"
+    android:layout_centerHorizontal="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/Sign_up_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_white" />
+
+
+        <EditText
+            android:id="@+id/sign_up_mailtext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/Sign_up_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edittext_bg"
+            android:elevation="4dp"
+            android:ems="10"
+            android:hint="Mail Adresi"
+            android:inputType="textPersonName"
+            android:paddingLeft="25dp"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/sign_up_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/sign_up_mailtext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bg"
+            android:elevation="4dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="Şifre"
+            android:paddingLeft="25dp"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/sign_up_password_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/sign_up_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_bg"
+            android:elevation="4dp"
+            android:ems="10"
+            android:hint="Şifre Tekrar"
+            android:paddingLeft="25dp"
+            android:textColorHint="@color/hintcolor"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/sign_up_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/sign_up_password_confirm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/sign_up_btn_bg"
+            android:clickable="true"
+            android:elegantTextHeight="false"
+            android:text="İlerle"
+            android:textColor="@android:color/white" />
+
+
+        <ImageView
+            android:id="@+id/Ordiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_up_btn"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ordivider" />
+
+        <LinearLayout
+            android:id="@+id/sign_up_google_liner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Ordiver"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/googleg_standard_color_18" />
+
+            <TextView
+                android:id="@+id/sign_in_google_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Google Üye Ol."
+                android:textColor="@color/hintcolor"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sign_up_liner"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="31dp"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/sign_in_account_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hesabın Var Mı?"
+                android:textColor="@color/hintcolor"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/sign_in_account_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Giriş Yap."
+                android:textColor="@color/hintcolor"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/sign_up_progress"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Sign_up_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-80dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

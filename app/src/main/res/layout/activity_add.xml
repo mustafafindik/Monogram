@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/add_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#fafafa"
+        android:elevation="3dp"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/post_share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_action_send"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/post_main_relative"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/post_image_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+
+
+                <ImageView
+                    android:id="@+id/post_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@color/defaultImage"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/post_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingStart="10dp"
+                    android:maxLines="5"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/hintcolor"
+                    android:hint="Bir açıklama yaz.."
+                    tools:ignore="RtlSymmetry" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_below="@+id/post_image_relative"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="0.2dp"
+            android:background="#bfbfbf"/>
+
+
+        <RelativeLayout
+            android:id="@+id/post_location_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/line"
+            tools:ignore="NotSibling">
+
+
+            <TextView
+                android:id="@+id/post_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#646363"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/ic_action_location"
+                android:text="Konum Ekle" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_below="@+id/post_location_rel"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="0.2dp"
+            android:background="#bfbfbf"/>
+
+        <RelativeLayout
+            android:id="@+id/post_comment_setting_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/line2"
+            tools:ignore="NotSibling">
+
+
+            <TextView
+                android:id="@+id/share_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#353535"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="Yorumlar : " />
+
+            <LinearLayout
+               android:layout_below="@+id/share_text"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#717171"
+                    android:gravity="center_vertical"
+                    android:text="Yorum Yapmayı Kapat" />
+
+                <Switch
+                    android:id="@+id/comment_false_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

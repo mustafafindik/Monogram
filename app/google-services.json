@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "334697316424",
+    "firebase_url": "https://instagramfirebase-74c3f.firebaseio.com",
+    "project_id": "instagramfirebase-74c3f",
+    "storage_bucket": "instagramfirebase-74c3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334697316424:android:212cc4192cb1c46b",
+        "android_client_info": {
+          "package_name": "findik.mustafa.monogram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334697316424-ar28n1lvm337io3hb2k1qfnkitdk6u1t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "findik.mustafa.monogram",
+            "certificate_hash": "e3aa9f930454909cdd50ec575f7fa73e88b235fd"
+          }
+        },
+        {
+          "client_id": "334697316424-mon66m0749p7ipslp6jrh652krfe9o10.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "findik.mustafa.monogram",
+            "certificate_hash": "7287472ce34fa5e9eab48ce2bafa778bb8fdd8d5"
+          }
+        },
+        {
+          "client_id": "334697316424-crub330f8ll5qpqre9v7av0ml9qq9m6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjyGfWhJPg_z88md0siTGwlbvGUHHutqA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334697316424-crub330f8ll5qpqre9v7av0ml9qq9m6o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

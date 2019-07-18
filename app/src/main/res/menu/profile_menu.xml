@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Şifre Değiştir" android:id="@+id/change_password" />
+    <item android:title="Üyeliğimi Sil" android:id="@+id/close_account" />
+    <item android:title="Çıkış Yap" android:id="@+id/sign_out" />
+</menu>

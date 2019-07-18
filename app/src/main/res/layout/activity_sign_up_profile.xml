@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+
+    <RelativeLayout
+        android:id="@+id/sign_up_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:id="@+id/sign_up_photo_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:clickable="true"
+            android:onClick="changeProfilePhoto"
+            android:focusable="true">
+
+
+            <RelativeLayout
+                android:id="@+id/sign_up_photo_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/sign_up_profile_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="9dp"
+                    android:padding="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/add_photo"
+                    app:civ_border_color="#89b1b1b1"
+                    app:civ_border_width="0.1dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign_up_photo_border"
+                android:layout_centerHorizontal="true"
+                android:text="Profil Resmi Ekle"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/linlay1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_up_photo_layout"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/sign_up_userName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/Sign_in_logo"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_bg"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Kullanıcı Adı"
+                android:paddingLeft="25dp"
+                android:password="false"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/sign_up2_finish_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/sign_up_userName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/sign_in_btn_bg"
+                android:clickable="true"
+                android:elegantTextHeight="true"
+                android:text="Bitir"
+                android:textColor="@android:color/white" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout >
